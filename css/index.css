@@ -1,0 +1,282 @@
+﻿body, html 
+{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	height: 100%;
+}
+
+*
+{
+	font-family: Verdana;
+	font-size: 8.25pt;
+}
+
+button
+{
+	width: 74px;
+	height: 21px;
+	margin-left: 4px;
+	cursor: pointer;
+}
+
+.imgMsgFace
+{
+	margin: 2px;
+	vertical-align: middle;
+}
+
+.imgMsgPortrait
+{
+	margin: 2px;
+	vertical-align:middle;
+}
+
+.divFuncPanel
+{
+	position:absolute;
+	border: solid 1px activeborder;
+}
+
+.divFuncPanelTitle
+{
+	color: windowtext;
+	background-color: activeborder;
+	padding: 4px 8px 4px 8px;
+	font-weight: bold;
+}
+
+.divFuncPanelContent
+{
+	margin: 4px;
+}
+
+.divChatMessageContent
+{
+	padding: 8px;
+	overflow: auto;
+}
+
+.imgSendFuncHover
+{
+	padding: 1px 2px 1px 2px;
+	background-color: inactiveborder;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.imgTitleIcon
+{
+	vertical-align: middle;
+}
+
+.imgSendFuncChecked
+{
+	padding: 1px 2px 1px 2px;
+	background-color: activecaption;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.divMsgText
+{
+	padding: 2px 4px 2px 16px;
+}
+
+.ulUserInfo
+{
+	list-style-type:none;
+	padding:4px 8px 4px 8px;
+	margin:0px;
+	border: solid 1px windowframe;
+	background-color:InfoBackground;
+	color:InfoText;
+	width: 150px;
+	position:absolute;
+}
+
+.divItemCurrent
+{
+	background-color: ActiveBorder;
+}
+
+.divItemNormal
+{
+	background-color: Transparent;
+}
+
+#divLoginPanel
+{
+	width: 100%;
+	text-align: center;
+}
+
+#imgBgImg
+{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+#divPageMsgPanel
+{
+	display: none;
+	width: 100%;
+	text-align:center;
+}
+
+#divChatRoom
+{
+	display: none;
+	width: 100%;
+}
+
+#imgPageMsg
+{
+	vertical-align: middle;
+}
+
+#divChatMessage
+{
+	vertical-align: bottom;
+}
+
+#divSendMsgBtns
+{
+	margin-top: 2px;
+	text-align:right;
+}
+
+#divSendMsgFunc
+{
+	overflow:hidden;
+}
+
+#selMsgTypes
+{
+	width: 80px;
+}
+
+#selSendUsers
+{
+	width: 100px;
+}
+
+#selFonts
+{
+	width: 130px
+}
+
+#selFontSize
+{
+	width: 40px;
+}
+
+#ulSendMsgFunc
+{
+	list-style-type: none; 
+	vertical-align: middle;
+	padding: 0px; 
+	margin: 0px;
+}
+
+#ulSendMsgFunc li
+{
+	float: left;
+	padding: 1px 4px 2px 0px;
+	vertical-align: middle;
+}
+
+#ulSendMsgFunc li img
+{
+	padding: 1px 2px 1px 2px;
+	background-color: inherit;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#txtSendMsg
+{
+	color: Black;
+	background-color: Transparent;
+	border: solid 1px activeborder;
+	font-family: Verdana;
+	font-size: 10pt;
+}
+
+#lblSendMsgSecret
+{
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+#chkSendMsgSecret
+{
+	vertical-align: middle;
+}
+
+#spanTitle
+{
+	font-size: 11pt;
+	padding-bottom: 8px;
+}
+
+#spanTitleCompany
+{
+	font-size: 8pt;
+}
+
+#tblLogin
+{
+	margin-top: 40px;
+	margin-bottom: 16px;
+	border: solid 2px buttonshadow;
+}
+
+#tblLogin td
+{
+	padding: 6px 14px 6px 14px;
+}
+
+#tdLoginButtons
+{
+	height: 40px;
+	vertical-align: bottom;
+	text-align: right;
+}
+
+#divTitle
+{
+	margin-top: 40px;
+	margin-bottom: 25px;
+	text-align:center;
+}
+
+#divAuthor
+{
+	position: absolute;
+	text-align:center;
+	left:0px;
+	width: 100%;
+	bottom: 8px;
+}
+
+#divChatWelcome
+{
+	height: 34px;
+	color: green;
+	vertical-align: middle;
+}
+
+#divChatMessagePanel
+{
+	background-position: right bottom;
+	background-image: url(../images/msglistbgimg.gif);
+	background-repeat: no-repeat;
+}
+
+#divUsersListContent
+{
+	padding: 2px 8px 2px 8px;
+}

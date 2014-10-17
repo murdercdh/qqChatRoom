@@ -1,0 +1,61 @@
+Admin: 管理员表
+User_Id:用户Id
+Level:管理员等级，低等级的不能踢高等级的
+
+Face: 表情表
+Face_Name:表情名，模拟QQ表情快捷键。如：/hx 表示害羞
+Description:表情说明
+IconPath: 表情图标地址
+
+Group: 组表
+Group_Name: 组名
+LargeIconPath: 组大图标地址
+SmallIconpath: 组小图标地址
+User_Id: 组长对应的用户Id
+Description: 组说明
+
+MessageType: 消息类型
+MessageType_Name: 消息类型名
+IsSystem: 是否系统消息，不是的话可以给用户选择
+Details: 消息详细类型，模拟QQ消息，如：谁打了谁一棒子，这里用/from /to标记写在句子里,/msg表示内容
+
+Portait: 用户头像选择
+LargeIconPath: 大头像
+SmallIconPath: 小头像
+
+User: 用户表
+User_Name: 用户名
+Password: 密码
+Birthday: 生日
+RealName: 真实姓名
+Gender: 性别
+Portrait_Id: 头像
+
+Message: 消息表
+User_Id: 发出消息的用户Id
+ToUsers_Id: 发送给的用户Id集合， 用户Id用[]括起来，如[1][2][3]，发给所有人则ToUsers_Id为0
+MessageType_Id: 对应消息类型Id
+IsSecret: 是否秘密
+FontName: 发送出去的字体
+FontSize: 发送出去的字体大小
+Color: 消息前景色
+BgColor: 消息背景色
+SendTime: 发送时间
+
+客户端获得消息的条件：
+
+1、自己发出的消息
+2、不为密文的消息
+3、发送给自己或所有人的消息
+
+select * from message
+where user_id = @UserId or issecret=0 or ((CHARINDEX(CONVERT(nvarchar, @UserId) + ',', ToUsers_Id) > 0) OR
+                      (ToUsers_Id = '') OR
+                      (ToUsers_Id IS NULL))
+
+客户端获得消息根据Id
+
+select * from message
+where (user_id = @UserId or issecret=0 or ((CHARINDEX(CONVERT(nvarchar, @UserId) + ',', ToUsers_Id) > 0) OR
+                      (ToUsers_Id = '') OR
+                      (ToUsers_Id IS NULL))) and message_id > @MessageId

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>无标题页</title>
+    <script type="text/javascript">
+		function check()
+		{
+			var body = document.body;
+			var ul = document.createElement("ul");
+			body.appendChild(ul);
+			with (ul.style)
+			{
+				listStyleType = "none";
+				padding = "4px 12px 4px 8px";
+				margin = "0px";
+				border = "solid 1px windowframe";
+				backgroundColor = "infobackground";
+				color = "infotext";
+				width = "100px";
+			}
+			
+			var li = document.createElement("li");
+			ul.appendChild(li);
+			li.innerText = "123123";
+		}
+    </script>
+</head>
+<body>
+	<button value="ff" onclick="check()"></button>
+</body>
+</html>

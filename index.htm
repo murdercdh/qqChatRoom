@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>YQQ Ajax Chat Room (半E文版 -_-!!!)</title>
+
+	<script type="text/javascript" src="js/qqchatroom.js"></script>
+
+	<link rel="Stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+	<div id="divLoginPanel">
+		<div id="divTitle">
+			<span id="spanTitle">StarTeam ® Ajax Chat Room Alpha</span><br />
+			<span id="spanTitleCompany">Copyright © 2007 <strong>Chinasoft Resource™.</strong> Have a good time.</span>
+		</div>
+		<table id="tblLogin">
+			<tbody>
+				<tr>
+					<td>
+						User Name:
+					</td>
+					<td>
+						<input type="text" id="txtLoginUserName" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Password:
+					</td>
+					<td>
+						<input type="password" id="txtLoginPassword" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Validate Code:</td>
+					<td>
+						<input id="txtValidateCode" type="text" />
+						<img id="imgValidCode" src="dataReq/QQValidateCode.ashx" title="Change validate code." /></td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td id="tdLoginButtons" class="tdLoginButtons">
+						<button id="btnLoginSubmit">
+							Login</button>
+						<button id="btnLoginRegister">Register</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="divAuthor">
+			Author: Yang Qinqing.<br />
+			Power By: Sherry, Eva, Vince, Tony, Camel, Yang, Avril, Eric, Allen. All rights
+			reserved.</div>
+	</div>
+	<div id="divPageMsgPanel">
+		<img id="imgPageMsg" alt="" src="images/error.gif" />
+		<label id="lblPageMsg">
+		</label>
+	</div>
+	<div id="divChatRoom">
+		<div id="divChatMessagePanel" class="divFuncPanel">
+			<div id="divChatMessageTitle" class="divFuncPanelTitle">
+				<img alt="" src="images/msglist.gif" class="imgTitleIcon" />
+				Messages List</div>
+			<div id="divChatMessageContent" class="divChatMessageContent">
+				<div id="divChatMessage">
+					<div id="divChatWelcome">
+						<img alt="" src="images/face/86.gif" />
+						Welcome to AJAX Chat room. Power By: Chinasoft&reg <strong>Yang Qinqing</strong>.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="divSendMsgPanel" class="divFuncPanel">
+			<div id="divSendMsgTitle" class="divFuncPanelTitle">
+				<img alt="" src="images/sendmsg.gif" class="imgTitleIcon" />
+				Send Message</div>
+			<div id="divSendMsgContent" class="divFuncPanelContent">
+				<div id="divSendMsgFunc">
+					<ul id="ulSendMsgFunc">
+						<li>
+							<select id="selSendUsers">
+								<option>所有人</option>
+								<option>选中的用户</option>
+							</select>
+						</li>
+						<li>
+							<select id="selMsgTypes">
+							</select>
+						</li>
+						<li>
+							<select id="selFonts">
+								<option>Arial</option>
+								<option>Tahoma</option>
+								<option>Times New Roman</option>
+								<option selected="selected">Verdana</option>
+								<option>宋体</option>
+								<option>黑体</option>
+								<option>幼圆</option>
+							</select>
+						</li>
+						<li>
+							<select id="selFontSize">
+								<option value="8">8</option>
+								<option value="12" selected="selected">10</option>
+								<option value="12">12</option>
+								<option value="16">16</option>
+								<option value="20">20</option>
+								<option value="24">24</option>
+							</select>
+						</li>
+						<li>
+							<img id="imgSendMsgBold" alt="bold" title="Bold" src="images/bold.gif" />
+						</li>
+						<li>
+							<img id="imgSendMsgItalic" alt="italic" title="Italic" src="images/italic.gif" />
+						</li>
+						<li>
+							<img id="imgSendMsgUnderLine" alt="underline" title="Underline" src="images/underline.gif" />
+						</li>
+						<li>
+							<img id="imgFontColor" alt="forecolor" title="Font Fore Color" src="images/fontbackcolorpicker.gif" />
+						</li>
+						<li>
+							<img id="imgFontBackColor" alt="bgColor" title="Font Back Color" src="images/fontforecolorpicker.gif" />
+						</li>
+						<li>
+							<img id="imgSendMsgFace" alt="insert face" title="Insert Face ( SHIFT KEY: MULTI SELECT !)"
+								src="images/face.gif" />
+						</li>
+					</ul>
+				</div>
+				<textarea id="txtSendMsg"></textarea>
+				<div id="divSendMsgBtns">
+					<button id="btnLogout" title="Logout">
+						Logout</button>
+					<button id="btnModifyInfo" title="Modify Personal Information">Modify Info</button>
+					<input type="checkbox" id="chkSendMsgSecret" />
+					<label id="lblSendMsgSecret" for="chkSendMsgSecret">
+						Secret</label>
+					<button id="btnSendMsg" title="Shortcut: Ctrl + Enter">Send</button>
+				</div>
+			</div>
+		</div>
+		<div id="divAffichePanel" class="divFuncPanel">
+			<div id="divAfficheTitle" class="divFuncPanelTitle">
+				<img alt="" src="images/sysnotify.gif" class="imgTitleIcon" />
+				System Notify</div>
+			<div id="divAfficheContent" class="divFuncPanelContent">
+				此版本为B班内部测试版，很多BUG，发现请速通知我，多谢：）
+				<ul>
+					<li>原生ajax...</li>
+					<li>通宵三夜...</li>
+					<li>三千行代码...</li>
+				</ul>
+			</div>
+		</div>
+		<div id="divUsersListPanel" class="divFuncPanel">
+			<div id="divUsersListTitle" class="divFuncPanelTitle">
+				<img alt="" src="images/olusers.gif" class="imgTitleIcon" />
+				(<label id="lblOnlineCount">
+				</label>
+				) &nbsp;Users Online</div>
+			<div id="divUsersListContent">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

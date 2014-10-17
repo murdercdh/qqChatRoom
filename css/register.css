@@ -1,0 +1,25 @@
+﻿*
+{
+	font-family: Verdana;
+	font-size: 8pt;
+}
+
+body {
+}
+
+#ulRegister
+{
+	list-style-type:none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#ulRegister li
+{
+	vertical-align:middle;
+}
+
+#ulRegister li ul li
+{
+	float:left;
+}
